@@ -35,7 +35,7 @@ pip install -r requirements.txt
 The project is divided into two main parts: training the model and running the live demo.
 
 **1. Train the Model (Optional):**
-If you want to train the model from scratch on the FER2013 dataset, run the training script. The trained model will be saved in the models/ directory.
+If you want to train the model from scratch on the FER2013 dataset, run the training script or you can use the pretrained model present in the "model" folder 
 ```bash
 python train.py 
 ```
