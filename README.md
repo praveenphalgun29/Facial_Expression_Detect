@@ -4,17 +4,7 @@ A real-time facial expression recognition system built with a Convolutional Neur
 
 ---
 
-### ## Demo 🎬
-
-A brief demonstration of the model detecting and classifying facial expressions in real-time.
-
-*(Recommended: Replace the image below with a GIF of your project in action! You can create a GIF using free tools like ScreenToGif or Kap.)*
-
-![Demo GIF of the facial expression recognition project](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnU5em10cG5yYW55ejYzbHFhZWZtdmxma2Z0d2I3a2dyZmhxa3JmayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKSjRrfIPjeiVyE/giphy.gif)
-
----
-
-### ## Features ✨
+### Features: 
 
 * **Real-Time Detection**: Identifies faces and predicts expressions instantly from a webcam feed.
 * **7 Core Expressions**: Classifies faces into Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise.
@@ -23,7 +13,7 @@ A brief demonstration of the model detecting and classifying facial expressions 
 
 ---
 
-### ## Technologies Used 🛠️
+### Technologies Used: 
 
 * **Python**: Core programming language.
 * **TensorFlow/Keras**: For building and training the CNN model.
@@ -32,11 +22,30 @@ A brief demonstration of the model detecting and classifying facial expressions 
 
 ---
 
-### ## Setup and Installation ⚙️
+### Install the required dependencies: 
 
-To run this project locally, follow these steps:
+This project's dependencies are listed in the requirements.txt file.
 
-**1. Clone the repository:**
 ```bash
-git clone [https://github.com/praveenphalgun29/Facial_Expression_Detect.git](https://github.com/praveenphalgun29/Facial_Expression_Detect.git)
-cd Facial_Expression_Detect
+pip install -r requirements.txt
+```
+---
+
+### How to use:
+The project is divided into two main parts: training the model and running the live demo.
+
+**1. Train the Model (Optional):**
+If you want to train the model from scratch on the FER2013 dataset, run the training script. The trained model will be saved in the models/ directory.
+```bash
+python train.py 
+```
+**2. Run the live demo:**
+To see the real-time expression recognition using your webcam, run the demo script. This script loads the pre-trained model from the models/ folder 
+```bash
+python run_demo.py
+```
+Press the 'q' key to exit the application.
+
+
+
+
